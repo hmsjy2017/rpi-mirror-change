@@ -6,7 +6,6 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak
 
 echo "更换apt源..."
-sudo -i
 echo "" > /etc/apt/sources.list
 echo "" > /etc/apt/sources.list.d/raspi.list
 
