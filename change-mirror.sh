@@ -1,9 +1,11 @@
 #!/bin/bash
+# 此脚本可同时更换apt、pip、docker、npm源为国内源，适用于RaspiOS Buster（原Raspbian），请使用root用户运行。
+
 echo "备份原有apt源..."
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak
 
-echo "更换软件源..."
+echo "更换apt源..."
 echo "" > /etc/apt/sources.list
 echo "" > /etc/apt/sources.list.d/raspi.list
 
