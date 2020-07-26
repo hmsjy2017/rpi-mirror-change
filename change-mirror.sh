@@ -14,8 +14,8 @@ deb http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main no
 deb-src http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main non-free contrib rpi
 EOF
 
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt -y upgrade
 
 cat >> /etc/apt/sources.list.d/raspi.list <<EOF
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
