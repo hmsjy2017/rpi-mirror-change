@@ -6,3 +6,5 @@
 1. 先使用`wget https://raw.githubusercontent.com/hmsjy2017/rpi-mirror-change/master/change-mirror.sh`下载脚本，如果提示`403`，说明域名被墙，请执行`wget https://gitee.com/iamsjy/rpi-mirror-change/raw/master/change-mirror.sh`。
 2. 然后输入`sudo chmod +x change-mirror.sh`，否则后面会因为权限不足而无法运行。
 3. 输入`sudo sh change-mirror.sh`运行脚本。
+
+合起来就是`wget https://gitee.com/iamsjy/rpi-mirror-change/raw/master/change-mirror.sh && sudo chmod +x change-mirror.sh && sudo sh change-mirror.sh`
