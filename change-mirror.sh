@@ -1,5 +1,5 @@
 #!/bin/bash
-# 此脚本可同时更换apt、pip、docker、npm源为国内源，适用于RaspiOS Buster（原Raspbian），请使用root用户运行。
+# 此脚本可同时更换apt、pip、docker、npm源为国内源，适用于RaspiOS Buster（原Raspbian）。
 
 echo "备份原有apt源..."
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
@@ -33,6 +33,9 @@ cat >> /etc/docker/daemon.json <<EOF
   "registry-mirrors": ["https://registry.docker-cn.com"]
 }
 EOF
+
+sudo systemctl restart docker
+
 echo "更换docker源完成"
 
 echo "更换npm源..."
