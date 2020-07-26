@@ -6,10 +6,11 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak
 
 echo "更换apt源..."
-sudo echo "" > /etc/apt/sources.list
-sudo  echo "" > /etc/apt/sources.list.d/raspi.list
+sudo -i
+echo "" > /etc/apt/sources.list
+echo "" > /etc/apt/sources.list.d/raspi.list
 
-sudo cat >> /etc/apt/sources.list <<EOF
+cat >> /etc/apt/sources.list <<EOF
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main non-free contrib rpi
 deb-src http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main non-free contrib rpi
 EOF
@@ -17,7 +18,7 @@ EOF
 sudo apt-get update
 sudo apt-get upgrade
 
-sudo cat >> /etc/apt/sources.list.d/raspi.list <<EOF
+cat >> /etc/apt/sources.list.d/raspi.list <<EOF
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
 EOF
 echo "更换apt源完成"
@@ -34,7 +35,7 @@ cat >> /etc/docker/daemon.json <<EOF
 }
 EOF
 
-sudo systemctl restart docker
+systemctl restart docker
 
 echo "更换docker源完成"
 
