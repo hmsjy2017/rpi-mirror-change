@@ -1,2 +1,7 @@
 # 树莓派更换软件源一键脚本
 此脚本可同时更换`apt`、`pip`、`docker`、`npm`源为国内源，适用于`RaspiOS Buster`（原`Raspbian`）。
+
+## 使用
+1. 先使用`wget https://raw.githubusercontent.com/hmsjy2017/rpi-mirror-change/master/change-mirror.sh`下载脚本，如果提示`403`，说明域名被墙，请执行`wget https://gitee.com/iamsjy/rpi-mirror-change/raw/master/change-mirror.sh`。
+
+2. 输入`./change-mirror.sh`运行脚本。
