@@ -14,12 +14,18 @@ deb http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main no
 deb-src http://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian/ buster main non-free contrib rpi
 EOF
 
+wget https://mirrors.tuna.tsinghua.edu.cn/raspberry-pi-os/raspbian.public.key
+apt-key add raspbian.public.key
+
 sudo apt -y update
 sudo apt -y upgrade
 
 cat >> /etc/apt/sources.list.d/raspi.list <<EOF
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
 EOF
+
+wget https://mirrors.tuna.tsinghua.edu.cn/raspberrypi/raspberrypi.gpg.key
+apt-key add raspberrypi.gpg.key
 echo "更换apt源完成"
 
 echo "更换pip源..."
