@@ -43,3 +43,5 @@ deb-src http://mirrors.bfsu.edu.cn/raspbian/raspbian/ buster main non-free contr
 # 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
 deb http://mirrors.bfsu.edu.cn/raspberrypi/ buster main ui
 ```
+## 重庆大学开源软件镜像站
+https://mirrors.cqu.edu.cn/raspbian/raspbian/
