@@ -34,7 +34,7 @@ deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main ui
 ```
 
 ## 北京外国语大学开源软件镜像站
-https://mirrors.bfsu.edu.cn/raspbian/
+https://mirrors.bfsu.edu.cn/raspbian/raspbian/
 ```
 # 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
 deb http://mirrors.bfsu.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
